@@ -82,4 +82,12 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getUniqueModesOfTransport());
   });
 
+
+  it('should be able to get a unique list of the modes of transport', function() {
+    const actual = [ 'train', 'aeroplane', 'car', 'ferry' ];
+    assert.deepStrictEqual(actual, traveller.getUniqueModesOfTransport2());
+  });
+
+
+
 });
